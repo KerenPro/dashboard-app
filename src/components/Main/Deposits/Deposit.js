@@ -8,7 +8,7 @@ const Deposit = ({data}) => {
     return (
         <S.Container>
             <S.Property>
-                <S.PropertyImg src={require(`../../../assets/images/${property.imageUrl}`)}/>
+                <S.PropertyImg src={require(`../../../assets/images/${property.imageUrl}`)} alt="house"/>
                 <S.PropertyText>
                     <S.PropertyStreet>{property.address.street}</S.PropertyStreet>
                     <S.Subtitle>{property.address.city} {property.address.state}</S.Subtitle>
