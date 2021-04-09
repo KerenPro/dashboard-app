@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import {Container} from './sidebarStyle'
+import Profile from './Profile'
 
 const Sidebar = () => {
     return (
-        <div>
-            Sidebar
-        </div>
+        <Container>
+            <Profile />
+        </Container>
     )
 }
 
