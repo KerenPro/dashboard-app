@@ -6,6 +6,8 @@ export const Container = styled.div `
 export const ProfileImg = styled.img ` 
     height: 4rem;
     width: 4rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
 `
 
 export const ProfileName = styled.h1 `
