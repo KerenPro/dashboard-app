@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div `
-
+    margin-top: 5rem;
 `
-export const ProfileImg = styled.img `
-
+export const ProfileImg = styled.img ` 
+    height: 4rem;
+    width: 4rem;
 `
 
 export const ProfileName = styled.h1 `
