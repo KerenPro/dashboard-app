@@ -17,12 +17,15 @@ export const Container = styled.div `
     }
 `
 
-export const Icon = styled.span `
-
+export const Icon = styled.span`
+/* color: ${props => props.active ? props.theme.activeMenu : "#AAA5A5"}; */
+    color: ${props => !props.active && props.theme.textColor};
+    font-size: 1rem;
+    margin-right: 1rem;
 `
 
 export const Title = styled.h1 `
     color: ${props => props.active ? props.theme.activeMenu : "#AAA5A5"};
-    font-size: 1rem;
-    margin-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
 `
