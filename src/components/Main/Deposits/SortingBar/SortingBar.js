@@ -1,15 +1,15 @@
 import React from 'react'
-import {Container, Property, MoveInDate, Rent, Deposit, Status} from './style'
+import * as S from './style'
 
 const SortingBar = () => {
     return (
-        <Container>
-            <Property>Property</Property>
-            <MoveInDate>Move In Date</MoveInDate>
-            <Rent>Rent</Rent>
-            <Deposit>Deposit</Deposit>
-            <Status>Status</Status>
-        </Container>
+        <S.Container>
+            <S.Property>Property</S.Property>
+            <S.MoveInDate>Move In Date</S.MoveInDate>
+            <S.Rent>Rent</S.Rent>
+            <S.Deposit>Deposit</S.Deposit>
+            <S.Status>Status</S.Status>
+        </S.Container>
     )
 }
 

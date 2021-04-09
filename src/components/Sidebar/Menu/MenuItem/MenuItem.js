@@ -1,12 +1,12 @@
 import React from 'react'
-import {Container, Title, Icon} from './style';
+import * as S from './style';
 
 const MenuItem = ({title, active, icon}) => {
     return (
-        <Container active={active}>
-             <Icon active={active} className="iconify" data-inline="false" data-icon={`mdi-light:${icon}`}></Icon>
-            <Title active={active}>{title}</Title>
-        </Container>
+        <S.Container active={active}>
+             <S.Icon active={active} className="iconify" data-inline="false" data-icon={`mdi-light:${icon}`}></S.Icon>
+            <S.Title active={active}>{title}</S.Title>
+        </S.Container>
     )
 }
 

@@ -1,16 +1,16 @@
 import React from 'react';
-import {Container} from './sidebarStyle'
+import * as S from './sidebarStyle'
 import Profile from './Profile';
 import Menu from './Menu/Menu';
 import ToggleSwitch from './ToggleSwitch/ToggleSwitch';
 
 const Sidebar = () => {
     return (
-        <Container>
+        <S.Container>
             <Profile />
             <Menu />
             <ToggleSwitch />
-        </Container>
+        </S.Container>
     )
 }
 

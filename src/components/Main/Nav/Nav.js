@@ -1,13 +1,13 @@
 import React from 'react'
-import {Container, ProfileImg, MessageIcon} from './style';
+import * as S from './style';
 import Image from '../../../assets/images/profileImg.png';
 
 const Nav = () => {
     return (
-        <Container>
-            <MessageIcon className="iconify" data-inline="false" data-icon="mdi-light:email"></MessageIcon>
-            <ProfileImg  src={Image} />
-        </Container>
+        <S.Container>
+            <S.MessageIcon className="iconify" data-inline="false" data-icon="mdi-light:email"></S.MessageIcon>
+            <S.ProfileImg  src={Image} />
+        </S.Container>
     )
 }
 

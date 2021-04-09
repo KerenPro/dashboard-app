@@ -1,37 +1,37 @@
 import React from 'react'
-import {Text, Container, Subtitle, Property, PropertyText, PropertyImg, PropertyStreet, MoveInDate, Rent, DepositWrapper, Status, StatusIndicator} from './style'
+import * as S from './style'
 
 const Deposit = ({data}) => {
     
     const {property, moveInDate, rent, deposit, status} = data;
     
     return (
-        <Container>
-            <Property>
-                <PropertyImg src={require(`../../../assets/images/${property.imageUrl}`)}/>
-                <PropertyText>
-                    <PropertyStreet>{property.address.street}</PropertyStreet>
-                    <Subtitle>{property.address.city} {property.address.state}</Subtitle>
-                </PropertyText>
-            </Property>
-            <MoveInDate>{moveInDate}</MoveInDate>
-            <Rent>${rent}</Rent>
-            <DepositWrapper>
-                <Text>${deposit.amount}</Text>
-                <Subtitle>{deposit.type}</Subtitle>
-            </DepositWrapper>
-            <Status>
-                <Text>{status.message}</Text>
+        <S.Container>
+            <S.Property>
+                <S.PropertyImg src={require(`../../../assets/images/${property.imageUrl}`)}/>
+                <S.PropertyText>
+                    <S.PropertyStreet>{property.address.street}</S.PropertyStreet>
+                    <S.Subtitle>{property.address.city} {property.address.state}</S.Subtitle>
+                </S.PropertyText>
+            </S.Property>
+            <S.MoveInDate>{moveInDate}</S.MoveInDate>
+            <S.Rent>${rent}</S.Rent>
+            <S.DepositWrapper>
+                <S.Text>${deposit.amount}</S.Text>
+                <S.Subtitle>{deposit.type}</S.Subtitle>
+            </S.DepositWrapper>
+            <S.Status>
+                <S.Text>{status.message}</S.Text>
                 {(() => {
                     switch (status.level) {
-                        case 1: return <StatusIndicator color="#F17E7E" />;
-                        case 2: return <StatusIndicator color="#FFD056" />;
-                        case 3: return <StatusIndicator color="#75C282" />;
-                        default: return <StatusIndicator color="#AAA5A5" />;
+                        case 1: return <S.StatusIndicator color="#F17E7E" />;
+                        case 2: return <S.StatusIndicator color="#FFD056" />;
+                        case 3: return <S.StatusIndicator color="#75C282" />;
+                        default: return <S.StatusIndicator color="#AAA5A5" />;
                     }
                 })()}
-            </Status>
-        </Container>
+            </S.Status>
+        </S.Container>
     )
 }
 

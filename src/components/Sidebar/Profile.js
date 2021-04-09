@@ -1,12 +1,12 @@
 import React from 'react';
-import {ProfileImg, ProfileName} from './profileStyle';
+import * as S from './profileStyle';
 import Image from '../../assets/images/profileImg.png';
 
 const Profile = () => {
     return (
         <div>
-            <ProfileImg src={Image} />
-            <ProfileName>Keren Abramson</ProfileName>
+            <S.ProfileImg src={Image} />
+            <S.ProfileName>Keren Abramson</S.ProfileName>
         </div>
     )
 }
